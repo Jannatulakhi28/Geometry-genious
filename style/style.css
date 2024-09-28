@@ -1,0 +1,38 @@
+.f-input{
+    width: 50px;
+    padding: 1px;
+    font-size: small;
+    border-radius: 3px;
+
+}
+.s-input{
+    width: 50px;
+    padding: 1px;
+    font-size: small;
+    border-radius: 3px;
+
+}
+
+    .f-span{
+        margin-top: 5px;
+        margin-left: 3px;
+    }
+    
+        
+    
+    .shape-container{
+        display: flex;
+    }
+    #top-div{
+        display: flex;
+        margin-top: 15px;
+    }
+    #card{
+        text-align:  center;
+        margin: 8px;
+    }
+    #card-2{
+        height: 280px;
+        width: 230px;
+        font-size: small;
+    }

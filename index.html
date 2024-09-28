@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    <header class="container">
+        <nav class="navbar navbar-expand-sm bg-primary-subtle">
+            <div class="container-fluid">
+              <div>
+                <h3>Interactive</h3>
+              <p>Geometry genius</p>
+              </div>
+              
+                <form class="d-flex" role="search">
+                    <button type="button" class="btn btn-primary">Blog</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <!-- mAIN CARD -->
+    <main >
+        <div id="top-div" class=" container ">
+            <!-- shape container -->
+        
+             <div class="  shape-container  p-3">
+                <!-- single shape -->
+                 <div id="card" class="  shadow-sm p-3 mb-5 bg-body-tertiary rounded ">
+                    <img src="./image/triangle.png" alt="">
+                    <div>
+                        <h3>tringle</h3>
+                        <p>Area (A) = 0.5* b* h</p>
+                        <div>
+                            <input id="triangle-base" class="f-input  " type="text" placeholder="b">
+                            <span class="f-span">cm</span>
+                            <input id="triangle-height" class="s-input" type="text" placeholder="b">
+                            <span>cm</span>
+                        </div>
+                        <div>
+                            <p>Area: <span id="triangle-area">0</span><span>cm<sup>2</sup></span></p>
+                        </div>
+                        <div class="d-grid gap-2 col-12 mx-auto">
+                            <button onclick="calculateTriangleArea()" class="btn  btn-primary">Calculate</button>
+                        </div>
+                    </div>
+                 </div>
+                 
+                <!-- single shape -->
+                 <div id="card" class=" shadow-sm p-3 mb-5 bg-body-tertiary rounded ">
+                    <img src="./image/rectangle.png" alt="">
+                    <div>
+                        <h3>Rectangle</h3>
+                        <p>Area (A) = w * I</p>
+                        <div>
+                            <input id="Rectangle-wight" class="f-input  " type="text" placeholder="w">
+                            <span class="f-span">cm</span>
+                            <input id="Rectangle-length" class="s-input" type="text" placeholder="I">
+                            <span>cm</span>
+                        </div>
+                        <div>
+                            <p>Area: <span id="Rectangle-area">0</span><span>cm<sup>2</sup></span></p>
+                        </div>
+                        <div class="d-grid gap-2 col-12 mx-auto">
+                            <button onclick="calculateRectangleArea()" class="btn  btn-primary">Calculate</button>
+                        </div>
+                    </div>
+                 </div>
+                 
+                <!-- single shape -->
+                 <div id="card" class=" shadow-sm p-3 mb-5 bg-body-tertiary rounded align-item-center">
+                    <img src="./image/parallelogram.png" alt="">
+                    <div>
+                        <h3>Parallelogram</h3>
+                        <p>Area (A) = b* h</p>
+                        <div>
+                            <input id="parallelogram-base" class="f-input  " type="text" placeholder="b">
+                            <span class="f-span">cm</span>
+                            <input id="parallelogram-height" class="s-input" type="text" placeholder="h">
+                            <span>cm</span>
+                        </div>
+                        <div>
+                            <p>Area: <span id="parallelogram-area">0</span><span>cm<sup>2</sup></span></p>
+                        </div>
+                        <div class="d-grid gap-2 col-12 mx-auto">
+                            <button onclick="calculateParallelogramArea()" class="btn btn-primary">Calculate</button>
+                        </div>
+                    </div>
+                 </div>
+                <div id="card-2" class="card-body shadow-sm p-5 bg-body-tertiary rounded">
+                  <h6 ><u>Area calculation</u></h6>
+                </div>
+              </div>
+               </div>
+               
+            </div>
+        </div>
+        <div class="container">
+         <!-- shape container -->
+        
+         <div class=" shape-container p-3">
+            <!-- single shape -->
+             <div id="card" class="shadow-sm p-3 mb-5 bg-body-tertiary rounded ">
+                <img src="./image/rhombus.png" alt="">
+                <div>
+                    <h3>Rhombus</h3>
+                    <p>Area (A) = 0.5* d1* d2</p>
+                    <div>
+                        <input id="rhombus-d1" class="f-input  " type="text" placeholder="d1">
+                        <span class="f-span">cm</span>
+
+                        <input id="rhombus-d2" class="s-input" type="text" placeholder="d2">
+                        <span>cm</span>
+                    </div>
+                    <div>
+                        <p id="rhombus-area">Area: <span>0</span><span>cm<sup>2</sup></span></p>
+                    </div>
+                    <div class="d-grid gap-2 col-12 mx-auto">
+                        <button onclick="calculateRhombusArea()" class="btn  btn-primary">Calculate</button>
+                    </div>
+                </div>
+             </div>
+             
+            <!-- single shape -->
+             <div id="card" class="shadow-sm p-3 mb-5 bg-body-tertiary rounded ">
+                <img src="./image/pentagon.png" alt="">
+                <div>
+                    <h3>pentagon</h3>
+                    <p>Area (A) = p * b</p>
+                    <div>
+                        <input id="pentagon-p" class="f-input  " type="text" placeholder="p">
+                        <span class="f-span">cm</span>
+                        <input id="pentagon-b" class="s-input" type="text" placeholder="b">
+                        <span>cm</span>
+                    </div>
+                    <div>
+                        <p id="pentagon-area">Area: <span>0</span><span>cm<sup>2</sup></span></p>
+                    </div>
+                    <div class="d-grid gap-2 col-12 mx-auto">
+                        <button onclick="calculatePentagonArea()" class="btn  btn-primary">Calculate</button>
+                    </div>
+                </div>
+             </div>
+             
+            <!-- single shape -->
+             <div id="card" class="shadow-sm p-3 mb-5 bg-body-tertiary rounded align-item-center">
+                <img src="./image/ellipse.png" alt="">
+                <div>
+                    <h3>Ellipse</h3>
+                    <p>Area (A) = &#8719;ab</p>
+                    <div>
+                        <input id="ellipse-a" class="f-input  " type="text" placeholder="a">
+                        <span class="f-span">cm</span>
+                        <input id="ellipse-b" class="s-input" type="text" placeholder="b">
+                        <span>cm</span>
+                    </div>
+                    <div>
+                        <p>Area: <span id="ellipse-area">0</span><span>cm<sup>2</sup></span></p>
+                    </div>
+                    <div class="d-grid gap-2 col-12 mx-auto">
+                        <button onclick=" calculateEllipseArea()" class="btn btn-primary  ">Calculate</button>
+                    </div>
+                </div>
+             </div>    
+         </div>
+       </div>
+    </main>
+    
+    <script src="js/Triangle.js"></script>
+    <script src="js/Parallelogram.js"></script>
+    <script src="js/ellipse.js"></script>
+    <script src="js/rhombus-js"></script>
+  </body>
+</html>
